@@ -1,12 +1,8 @@
 /*  ----------------FULL PAGE----------------  */
 .page{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #F8F8F8;
 }
 /*  ----------------HEADINGS AND FONTS----------------  */
-
 h1{
     color: #FFFFFF;
     font-family:  'Nunito', sans-serif;
@@ -41,15 +37,26 @@ h5{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #A62549;
+}
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #2E2E2E;
     font-weight: 400;
+    margin-bottom: 20px;
+}
+li {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 /*  ----------------MAIN NAVIGATION----------------  */
 .navbar {
-    max-width: 1440px;
+    max-width: 100%;
     background:#1C063B;
 }
 #navbarNav {
@@ -57,9 +64,9 @@ p{
    justify-content: center;
 }
 .navbutton{
-    background-color: #1c063b00;
-    height: 73px;
-    width: 190px;
+    background-color: #50455f00;
+    min-height: 73px;
+    min-width: 190px;
     display: inline-block;
     border: none;
 }
@@ -94,6 +101,9 @@ nav a:active{
     align-items: center;
     justify-content: center;
 }
+.icons{
+    margin: auto;
+}
 .navbar-nav .casestudy{
     display: inline-block;
     float: none;
@@ -101,6 +111,7 @@ nav a:active{
     justify-content: center;
 }
 .casestudy a{
+    display: inline-block;
     color: #1C063B;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
@@ -117,43 +128,29 @@ nav a:active{
 /*  ---------------- JUMBOTRON AND HERO IMAGE ----------------  */
 .hero{
     background-color: #17607A;
-    max-height: 750px;
-    max-width: 1440px;
+    max-width: 100%;
     display: inline-block;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 3.75rem;
 }
 .herotext{
     max-height: 50%;
     max-width: 50%;
-    align-content: center;
     justify-content: center;
-    float: left;
+
 }
 .hero h5{
     color: #F8F8F8;
 }
 .heroimage {
-    align-content: center;
-    border: solid white;
-    box-shadow: 0 0 3px #F8F8F8;
+    max-width: 50%;
+    max-height: 50%;
     float: right;
 }
-.hero h3{
-    padding-bottom: 15px !important; 
-}
-.hero h2{
-    padding-bottom: 15px !important;
-}
 /*  ---------------- ABOUT PROJECT ----------------  */
-.about{
-    padding-right: 100px;
-    padding-left: 100px;
-}
+
 .about h2{
     color: #17607A;
+    padding-bottom: 40px;
 }
 .about h5{
     color: black;
@@ -163,18 +160,19 @@ nav a:active{
 }
 
 /*  ---------------- DESIGN PROCESS ----------------  */
-.designprocess{
-    padding-left: 100px;
-    padding-right: 100px;
-}
 .sectionheading{
     min-width: 100%;
     background-color: #17607A;
     align-content: center;
     text-align: center;
     padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
-
+.designimg {
+    align-items: center;
+    justify-content: center;
+}
 /*  ---------------- USER RESEARCH ----------------  */
 .urimage{
     background-image: url(images/researchimage.jpg);
@@ -182,41 +180,249 @@ nav a:active{
     padding: 50px;  
     max-height: 579px;
     max-width: 610px;
+    float: right;
 }
 .urimage h5 {
     color: #F8F8F8;
 }
-    
+.righttext{
+    float: left;
+}
+hr{
+    border: 2px solid #17607A;
+}   
 /*  ---------------- DEFINITION ----------------  */
+.persona p {
+    font-size: 12px;
+}
+.jm p{
+    font-size: 12px;
+}
 /*  ---------------- IDEATION ----------------  */
+.flow p{
+    font-size: 12px;
+}
+.flow p {
+    text-align: center;
+}
 /*  ---------------- VISUAL DESIGN ----------------  */
-/*  ---------------- PROTOTYPE ----------------  */
-/*  ---------------- TESTING ----------------  */
-/*  ---------------- CONCLUSION ----------------  */
-/*  ----------------FOOTER----------------  */
-footer{
-    background-color: #1C063B;
-    min-height: 378px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 100px;
+.before {
+    float: left;
+}
+.after {
+    float: right;
+}
+.logore{
+    margin-bottom: 60px;
+}
+.visualdesign h5 {
+    text-align: center;
+}
+.color {
+    margin-bottom: 60px;
+}
+.type {
+    margin-bottom: 60px;
+}
+.iconsvd {
+    margin-bottom: 60px;
+}
+.buttons {
+    margin-bottom: 60px;
 }
 
-.social {
-    align-content: center;
+/*  ---------------- PROTOTYPE ----------------  */
+.prototype h5 {
+    text-align: center;
+
+}
+.prototype a {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #17607A;
+}
+.link{
+    margin-bottom: 20px;
+}
+.lofi{
+    margin-bottom: 60px;
+}
+/*  ---------------- TESTING ----------------  */
+.video{
+    margin-bottom: 60px;
+}
+/*  ---------------- CONCLUSION ----------------  */
+.cpadding{
+    margin-bottom: 60px;
+}
+.top{
+    margin-top: 60px;
+}
+/*  ----------------FOOTER----------------  */
+
+footer {
+    background-color: #1C063B;
+    height: 450px;
+    width: 1440px;
+    top: 2584px;
+}
+
+.footerhands{
+    width: 1440px;
+    position: relative;
+    display: inline-block;
+
+}
+.footerhands .together {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footerhands:hover .together {
     display: inline-block;
 }
-.p-3{
-    color: #F8F8F8;
 
+.footerhands:hover .apart {
+    display: none;
 }
-.buttonsection{
-    display: inline-flex;
+footer p {
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    color: #F8F8F8;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+.footerheading {
+    padding-left: 100px;
+}
+
+.socialmedia{
+    text-align: center;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
     
 }
-.copyright{
-    padding-top:150px;
+.social {
+    display: inline-block;
+    align-items: right;
+}
+
+/* CONTACT MODAL*/
+
+.popup{
+    display: none;
+    position: absolute;
+    width: 1440px;
+    height: 3000px;
+    background-color:rgba(28, 6, 59, 0.8);
+}
+.contactme {
+    background-image: url(images/backgroundimage.png);
+    background-size: cover;
+    max-width: 1030px;
+    height: 651px;
+    display: flex;
+    margin-left: 205px;
+    margin-right: 205px;
+    margin-top: 155px;
+    align-items: center;
+    padding: 60px;
+    border-radius: 15px;
+    
+}
+.close {
+    position: absolute;
+    padding-left: 880px;
+}
+.contactme h3 {
+    color: #1C063B;
+}
+
+.contactme h2 {
+    color: #1C063B;
+}
+
+
+input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:#4F4F4F;
+    font-size: 16px;
+}
+label{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: #1C063B;
+}
+#message{
+    height: 138px;
+    align-items: flex-start;
+}
+
+.sendimage{
+   justify-content: center;
+   align-items: center;
+}
+.popup .roundbutton {
+    margin: 0;
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+/*  ---------------- BUTTONS ----------------  */
+.button{
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    width: 295px;
     text-align: center;
+    outline: 2px solid white;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    border: none;
+    
+}
+.roundbutton {
+    display: inline-block;
+    background: linear-gradient(180deg, #F2A2B8 -93.33%, #5005F2 114.44%);
+    width: 190px;
+    height: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color:#F8F8F8;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 100px;
+    border: 2px solid #F8F8F8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 5%;
+    margin-left: 20%;
+}
+
+.contactmebutton {
+    color: #1C063B;
+    background-color: #F8F8F8;
+
+}
+
+.contactmebutton a {
+    color: #1C063B;
+}
+.downloadbutton {
     color: #F8F8F8;
-    padding-bottom: 20px;
+    background-color: #1C063B;
 }

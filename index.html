@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
                     <button class="navbutton"><a class="nav-link" href="#">Projects</a></button>
                     </li>
                     <li class="nav-item">
-                    <button class="navbutton"><a class="nav-link" href="#">Contact</a></button>
+                    <button class="navbutton"><a class="nav-link contact" href="#">Contact</a></button>
                     </li>
                     <li class="nav-item">
                     <button class="navbutton"><a class="nav-link" href="#">Resume</a></button>
@@ -38,51 +39,72 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse icons justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#research">
                   <img class="research" src="images/research.png" width="50px" alt="">Research</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#define">
                     <img class="research" src="images/define.png" width="50px"  alt="">Define</a>
                    
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#ideate">
                     <img class="research" src="images/ideate.png" width="50px"  alt="">Ideate</a>
                     
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#prototype">
                     <img class="research" src="images/prototype.png" width="50px"  alt="">Prototype</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#test">
                     <img class="research" src="images/test.png" width="50px" alt="">Test</a>
                 
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#conclusion">
                     <img class="research" src="images/conclusion.png" width="50px" alt="">Conclusion</a>
             </li>
           </ul>
         </div>
       </nav>
+    <!-- CONTACT ME MODAL -->
+    <div class="popup">
+      <div class="contactme">
+          <form action="#" id="contactmeform"> 
+              <span class="close"><img src="images/closeicon.png" width="36px" alt="closebutton"></span>
+              <h3>Contact Me </h3>
+              <h2>Let's Talk</h2>
+              <label for="name">Name</label>
+              <input class="name" type="text" placeholder="Your Name">
+              <label for="email">Email</label>
+              <input class="email" type="text" placeholder="Your Email">
+              <label for="message">Message</label>
+              <input id="message" type="text" placeholder="What's Up">
+              <button class="roundbutton" type="submit">Send</button>
+          </form>
+      <div class="sendimage">
+          <img src="images/airplane.png" width="294px" alt="Illustration of paper airplane">
+      </div>
+      </div>
+    </div>
+
 <!-- JUMBOTRON / HERO SECTION  -->
-    <div class="hero">
-      <div class="container">
-        <div class="herotext .col-md-5">
+      <div class="container hero">
+        <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-5 herotext" >
           <h3>Case Study</h3>
           <h2>PAWS of Austin</h2> 
           <h5>Connecting animals with their furever homes</h5>
         </div>
-        <div class="heroimage .col-md-7">
-          <img src="images/pawshero.jpg" width="715px" height="487" alt="Photo of Emily Anaclerio-Hammel">
+        <div class="col-7 heroimage">
+          <img src="images/pawshero.jpg" width="100%" alt="Photo of Emily Anaclerio-Hammel">
+        </div>
         </div>
       </div>  
-    </div> 
  <!-- ABOUT THE PROJECT  -->
     <section class="about">
       <div class="container">
@@ -132,23 +154,25 @@
         <h2><span class="headingtext">Design Process</span></h2>
         </div>
       <div class="row">
+        <div class="col-12">
         <h5>Design Steps</h5>
         <p>The process for PAWS UI redesign was shaped by principles of design thinking methodology. I helped keep us on task as we moved through the following steps.</p>
       </div>
-     <div class="designimg">
+     <div class="col d-flex align-items-center justify-content-center designimg">
         <img src="images/designprocess.png" width="80%"
         alt="">
       </div>
     </div>
+    </div>
     </section>
 <!------------ USER RESEARCH ------------->
-    <section class="userresearch">
+    <section class="userresearch" id="research">
       <div class="container">
         <div class="sectionheading">
         <h2><span class="headingtext">User Research</span></h2>
         </div>
       <div class="row">
-        <div class="col-5">
+        <div class="col-6 righttext">
           <div class="textbox">
             <h5>User Research Goals</h5>
             <p>We wanted to understand our users' pain points and motivations as it pertains to pets, adoption decisions, and how they connect with rescue organizations.</p>
@@ -176,20 +200,20 @@
             </ul>
           </div>
         </div>
-        <div class="col-5 urbox">
+        <div class="col-6 urbox d-flex align-items-center justify-content-center designimg">
           <div class="urimage">
           <h5>"I applied to two different shelters and I didn't hear back and it was actually kind of hard because a lot of the decisions on accepting an adoption is opinion based. So it's not always easy."</h5>
         </div>
         </div>
-      </div>
+      </div> 
 <hr>
       <div class="row">
-        <div class="col-5 research2">
+        <div class="col-6 research2 d-flex align-items-center justify-content-center">
           <div>
           <img src="images/ur-evaluation.jpg" width="100%" alt="">
         </div>
         </div>
-        <div class="col-5 urtext">
+        <div class="col-6 urtext">
           <div class="textbox">
             <h5>Competitor Analysis</h5>
             <p>Since most of our respondents mentioned Austin Pets Alive we realized they were our main local competitor and we felt compelled to conduct a competitor analysis. We also ran a direct competitor analysis on the Austin Humane Society as well as some indirect competitors such as Lara's Canine Solutions, and pet finder. We called out strength, weakness, customer reviews, and personal notes to get a sense of what we needed to create a successful redesign.</p>
@@ -200,11 +224,10 @@
           </div>
         </div>
       </div>
-
-      </div>
-    </section>
+  </div> 
+</section>
 <!------------ DEFINITION ------------->
-<section class="definition">
+<section class="definition" id="define">
   <div class="container">
     <div class="sectionheading">
     <h2><span class="headingtext">Definition</span></h2>
@@ -227,13 +250,13 @@
       </ul>
     </div>
     <div class="row">
-    <div class="col-5 persona">
+    <div class="col-6 persona">
       <img src="images/persona.jpg" width="100%" alt="">
       <div class="defineimgtext">
        <p>Meet Jill a divorced mother of 2 daughters, who are heading off to college, as she becomes an empty nester she is feeling lonely and searching for her perfect pet.</p>
       </div>
     </div>
-    <div class="col-5 jm">
+    <div class="col-6 jm">
       <img src="images/journeymap.jpg" width="100%" alt="">
       <div class="defineimgtext">
         <p>Our journey map to visualize how Jill would move through this new journey in her life.</p>
@@ -243,13 +266,13 @@
   </div>
 </section>
 <!------------ IDEATION ------------->
-<section class="ideation">
+<section class="ideation" id="ideate">
   <div class="container">
     <div class="sectionheading">
     <h2><span class="headingtext">Ideation</span></h2>
     </div>
-    <div class="row">
-    <div class="col-5">
+    <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-6">
       <h5>Brainstorming</h5>
       <ul>
         <li>To ideate creative solutions to Jill’s problems we conducted the I like, I wish, and what if exercise.</li>
@@ -259,7 +282,7 @@
       <h5>User Flow</h5>
       <p>Starting with a user flow, we visualize how Jill would move through the site. We kept in mind our project scope to keep us on track. Focused predominantly on the donation and adoption process since those were Jill’s major pain points.</p>
     </div>
-    <div class="col-5">
+    <div class="col-6 flow">
       <img src="images/userflow.jpg" width="100%" alt="">
       <p>Jill's User Flow</p>
     </div>
@@ -267,7 +290,7 @@
 </div>
 </section>
 <!------------ VISUAL DESIGN ------------->
-<section class="visualdesign">
+<section class="visualdesign"> 
   <div class="container">
     <div class="sectionheading">
     <h2><span class="headingtext">Visual Design</span></h2>
@@ -276,31 +299,35 @@
       <h5>Logo Redesign</h5>
       <p>As we began the redesign effort we started with rebranding. Our first step was to redesign the logo to create a more cohesive and identifiable brand. </p>
     </div>
-    <div class="row">
-      <div class="col-5">
+    <div class="row d-flex align-items-center justify-content-center logore">
+      <div class="col-6 before">
         <h5>Before</h5>
-        <img src="images/orginallogo.jpg" alt="">
+        <img src="images/orginallogo.jpg" width="100%" alt="">
       </div>
-      <div class="col-5">
+      <div class="col-6 after">
         <h5>After</h5>
-        <img src="images/logoredesign.jpg" alt="">
+        <img src="images/logoredesin.jpg" width="100%" alt="">
       </div>
     </div>
+    <hr>
     <div class="color">
       <h5>Colors</h5>
       <p>We wanted our site to feel whimsical, cute, and fun. We choose colors we felt would convey these emotions and created a pleasing and accessible design.</p>
       <img src="images/colors.png" width="100%" alt="">
     </div>
+    <hr>
     <div class="type">
       <h5>Typography</h5>
       <p>The display type is Patrick Hand to give the text a handwritten and whimsical feel. Smaller headings and body copy is Open Sans for clarity and accessibility.</p>
-      <img src="images/type.png" width="100%" alt="">
+      <img src="images/type.jpg" width="100%" alt="">
     </div>
-    <div class="icons">
+    <hr>
+    <div class="iconsvd">
       <h5>Icons</h5>
       <p>Icons are displayed on a circle background usually appearing in Charming Chartreuse on the Great Grey or Besty Turquoise backgrounds.</p>
       <img src="images/icons.jpg" width="100%" alt="">
     </div>
+    <hr>
     <div class="buttons">
       <h5>Buttons</h5>
       <p>We created buttons with different states to create engagement and usability for our users. Below are our buttons the top show our normal state, the second is the hover, and the bottom is clicked state.</p>
@@ -309,7 +336,7 @@
   </div>
 </section>
 <!------------ PROTOTYPE ------------->
-<section class="prototype">
+<section class="prototype" id="prototype">
   <div class="container">
     <div class="sectionheading">
     <h2><span class="headingtext">Prototype</span></h2>
@@ -317,25 +344,27 @@
     <div class="lowfi">
       <h5>Low Fidelity Wireframes</h5>
       <p>We started with low fidelity wireframes to begin visualizing how we wanted the website to look and function. We couldn’t decided which pet compatibility form we preferred so we decided to create both and let our users decide.</p>
-      <a href="#">SEE THE FULL LOW FIDELITY PROTOTYPE</a>
-      <img src="images/wireframes.jpg" width="100%" alt="">
+      <div class="text-center link">
+      <a href= "https://www.figma.com/proto/CMjY42HzlPNRtHQPKVEriY/PAWS-of-austin?node-id=215%3A685&viewport=594%2C622%2C0.08512698113918304&scaling=scale-down-width&page-id=215%3A668" target="_blank">SEE THE FULL LOW FIDELITY PROTOTYPE</a></div>
+      <img class="lofi" src="images/wireframes.jpg" width="100%" alt="">
     </div>
     <div class="hifi">
       <h5>High Fidelity Wireframes</h5>
       <p>After conducting comparative testing on the low fidelity wireframes we moved onto the high fidelity due to the short project turn around time.</p>
-      <a href="#">SEE THE FULL HIGH FIDELITY PROTOTYPE</a>
+      <div class="text-center link">
+      <a href="https://www.figma.com/proto/CMjY42HzlPNRtHQPKVEriY/PAWS-of-austin?node-id=552%3A112799&viewport=723%2C257%2C0.015625&scaling=scale-down-width&page-id=552%3A112681" target="_blank" >SEE THE FULL HIGH FIDELITY PROTOTYPE</a></div>
       <img src="images/hi-wireframes.jpg" width="100%" alt="">
     </div>
   </div>
 </section>
 <!------------ TESTING ------------->
-<section class="testing">
+<section class="testing" id="test">
   <div class="container">
     <div class="sectionheading">
     <h2><span class="headingtext">Testing</span></h2>
     </div>
     <div class="row">
-      <div class="col-5">
+      <div class="col-6">
         <h5>Low Fidelity Testing</h5>
         <p>We conducted testing with 6 users and ran a comparative test regarding the preferred pet compatibility form.</p>
         <h6>Results</h6>
@@ -345,14 +374,14 @@
           <li>They liked the different donation options we provided.</li>
         </ul>
       </div>
-      <div class="col-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TafkojbSErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-6 d-flex align-items-center justify-content-center video">
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/TafkojbSErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      <div class="col-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/guZLUy2wrzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-6 d-flex align-items-center justify-content-center">
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/guZLUy2wrzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-5">
+      <div class="col-6 video">
         <h5>High Fidelity Testing #1</h5>
         <p>We conducted remote testing with 6 users we asked them to move through our donation, compatibility test, and adoption process.</p>
         <h6>Results</h6>
@@ -366,7 +395,7 @@
           <li>We added skip buttons to create an account, and changed the language on several buttons to clarify our meaning.</li>
         </ul>
       </div>
-      <div class="col-5">
+      <div class="col-6">
         <h5>High Fidelity Testing #2</h5>
         <p>We ran one last test of our high fidelity prototype with 6 users.</p>
         <ul>
@@ -374,40 +403,40 @@
           <li>They loved the skip buttons and the new progress bars.</li>
         </ul>
       </div>
-      <div class="col-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WkljeURQXSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-6 d-flex align-items-center justify-content-center">
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/WkljeURQXSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
     </div>
   </div>
 </section>
 <!------------ CONCLUSION ------------->
-<section class="conclusion">
+<section class="conclusion" id="conclusion">
   <div class="container">
     <div class="sectionheading">
     <h2><span class="headingtext">Conclusion</span></h2>
     </div>
     <div class="row">
-      <div class="col-5">
+      <div class="col-6">
         <h5>Conclusion</h5>
         <p>I feel we solved many of Jill’s problems by creating a test to match her with the perfect pet for her lifestyle while making the adoption and donation process easier to navigate. We provided clear communication of what to expect during the adoption process. The compatibility test was critical to the adoption process since it provided necessary information for the adoption application in a fun and engaging way thereby speeding up the adoption process.</p>
       </div>
-      <div class="col-5">
+      <div class="col-6 cpadding">
         <img src="images/conclusion1.jpg" width="100%" alt="">
       </div>
-      <div class="col-5">
+      <div class="col-6">
         <img src="images/conclusion2.jpg" width="100%" alt="">
       </div>
-      <div class="col-5">
+      <div class="col-6">
         <h5>Key Learnings</h5>
         <p>I learned a great deal about components and the importance of creating them up front to make the design process move forward at a quick pace. I feel as a team we worked quickly and successfully through this project by dividing up the tasks. We created some great solutions to help PAWS of Austin increase their donations, and streamlined the adoption process. We help Jill meet her goal of finding her perfect match as well.</p>
       </div>
     
-      <div class="col-5">
+      <div class="col-6 cpadding top">
         <h5>What's Next</h5>
         <p>In hindsight I wish I would have run user testing on the existing webpage. At the time I felt it was unimportant due to time constraints. The page was hard to navigate and the overall look needed a major restructuring. I wanted to understand users' motivation over their understanding of the existing site. With more time I would like to build out the fostering program, create an education section that would delve into community involvement and education. I also would like to revisit the mobile design and make it more user friendly.</p>
       </div>
-      <div class="col-5">
+      <div class="col-6 top">
         <img src="images/what's Next.jpeg" width="100%" alt="">
       </div>
     </div>
@@ -415,45 +444,52 @@
 </section>
 <!--_____________ FOOTER _______________--> 
 <footer>
-  <div class="container-fluid">
-    <h2>Let's Connect</h2>
-    <div class="row">
-    <div class="socialmedia">
-      <div class="social">
-          <a href="https://www.linkedin.com/in/emilyrosehammel/" target="_blank" rel="noopener noreferrer">
-              <img src="images/linkedin.png" button="Onclick" alt="link to my Linkedin page">
-          </a>
+  <div class="footerhands">
+      <img src="images/hands apart.png" class="apart" alt="Illustration of hand reaching to shake">
+      <img src="images/handshake.png" class="together" alt="Illustration of hands shaking">
+  
+  </div>
+  <h2 class="footerheading">Let's Connect</h2>
+
+      <div class="socialmedia">
+          <button class="button contactmebutton">
+              <a href="#">Contact Me</a>
+          </button>
+
+          <div class="social">
+              <a href="https://www.linkedin.com/in/emilyrosehammel/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/linkedin.png" button="Onclick" alt="link to my Linkedin page">
+              </a>
+          </div>
+
+          <div class="social">
+              <a href="https://dribbble.com/EmilyHammel" target="_blank" rel="noopener noreferrer"> 
+                  <img src="images/dribble.png" alt="link to my Dribbble page">
+              </a>
+          </div>
+
+          <div class="social">
+              <a href="https://www.instagram.com/emilyrosedesign/" target="_blank" rel="noopener noreferrer">
+                  <img src="images/instgram.png" alt="link to my Istagram page">
+              </a>
+          </div>
+
+          <button class="button downloadbutton"><a href="#">Download Resume</a></button>
       </div>
-      <div class="social">
-          <a href="https://dribbble.com/EmilyHammel" target="_blank" rel="noopener noreferrer"> 
-              <img src="images/dribble.png" alt="link to my Dribbble page">
-          </a>
-      </div>
-      <div class="social">
-          <a href="https://www.instagram.com/emilyrosedesign/" target="_blank" rel="noopener noreferrer">
-              <img src="images/instgram.png" alt="link to my Istagram page">
-          </a>
-      </div>
-  </div>
-  </div>
-  <div class="buttonsection">
-    <button class="button contactmebutton">
-      <a href="#">Contact Me</a></button>
-    <button class="button downloadbutton"><a href="#">Download Resume</a></button>
-  </div>
-    <div class="copyright">
-    © Emily Anaclerio-Hammel 2021</div>
-  </div>
+
+          <div>
+          <p>© Emily Anaclerio-Hammel 2021</p>
+          </div>
 </footer>
- </div>
- 
+</div>
 
  <!-- SCRIPTS  --> 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js"></script>
 
     
 </body>
