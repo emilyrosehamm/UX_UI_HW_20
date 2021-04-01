@@ -89,14 +89,17 @@ nav a {
 nav a:hover {
     color: #F8F8F8;
 }
-nav a:active{
+.navbar a:active{
     background-color:#F2A2B8;
     color: #1C063B;
 }
 /*  ----------------CASE STUDY NAVIGATION----------------  */
+#csnav{
+    transition: all ease 0.5s;
+}
 .casestudy{
     min-height: 70px;
-    background-color: #F8F8F8;
+    background-color: #17607A;
     float: none;
     align-items: center;
     justify-content: center;
@@ -112,19 +115,23 @@ nav a:active{
 }
 .casestudy a{
     display: inline-block;
-    color: #1C063B;
+    color: white;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     position: relative;
 }
 .casestudy a:hover{
-    color: #1C063B;
+    color: #CCD344;
 }
 .casestudy li:hover{
-    color: #1C063B;
-    border: 2px solid #F2A2B8;
+    color: #CCD344;
+    border: 2px solid white;
 }
+#csnav li:active{
+    background-color: #CCD344 ;
+}
+
 /*  ---------------- JUMBOTRON AND HERO IMAGE ----------------  */
 .hero{
     background-color: #17607A;
@@ -264,13 +271,12 @@ hr{
 
 footer {
     background-color: #1C063B;
-    height: 450px;
-    width: 1440px;
-    top: 2584px;
+    min-height: 450px;
+    width: 100%;
 }
 
 .footerhands{
-    width: 1440px;
+    width: 100%;
     position: relative;
     display: inline-block;
 
@@ -313,6 +319,13 @@ footer p {
     align-items: right;
 }
 
+footer a{
+    color: #F8F8F8;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #F2A2B8;
+}
 /* CONTACT MODAL*/
 
 .popup{

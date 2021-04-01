@@ -1,3 +1,5 @@
+
+// CONTACT ME FORM FUNCTION
 console.log("your index.js file is loaded correctly!")
 $ (document).ready (function () {
   $(".contactmebutton").click (function () {
@@ -16,7 +18,7 @@ $(".contact").click (function () {
       
       
 
-// Select all links with hashes
+// SMOOTH SCROLL FUNCTION ON CASE STUDY NAV
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -52,3 +54,4 @@ $('a[href*="#"]')
       }
     }
   });
+
